@@ -3,6 +3,8 @@ const app = express()
 const mongoose = require('mongoose')
 const UserModal = require('./models/Users')
 
+app.use(express.json())
+
 mongoose.connect('mongodb+srv://Minhvy828:btePbYdd3W4XfAHM@cluster0.jxniums.mongodb.net/mern-tutorial?retryWrites=true&w=majority')
 
 app.get('/getUsers', (req, res) => {
