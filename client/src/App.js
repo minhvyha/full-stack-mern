@@ -27,7 +27,7 @@ function App() {
 
   const createUser = () =>{
     Axios.post('http://localhost:3001/createUser', {name, age, username}).then((repsonse) =>{
-      alert('User Created')
+      setListOfUsers([...listOfUsers, {name, age, username}])
     })
   }
 
