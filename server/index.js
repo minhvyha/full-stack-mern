@@ -3,7 +3,10 @@ const app = express()
 const mongoose = require('mongoose')
 const UserModal = require('./models/Users')
 
+const cors = require('cors')
+
 app.use(express.json())
+app.use(cors())
 
 mongoose.connect('mongodb+srv://Minhvy828:btePbYdd3W4XfAHM@cluster0.jxniums.mongodb.net/mern-tutorial?retryWrites=true&w=majority')
 
