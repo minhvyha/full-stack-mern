@@ -8,7 +8,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://Minhvy828:btePbYdd3W4XfAHM@cluster0.jxniums.mongodb.net/mern-tutorial?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Minhvy828:???@cluster0.jxniums.mongodb.net/mern-tutorial?retryWrites=true&w=majority')
 
 app.get('/getUsers', (req, res) => {
     UserModal.find({}, (err, result) =>{
@@ -32,4 +32,3 @@ app.post('/createUser', async (req, res) =>{
 app.listen(3001, ()=>{
     console.log('server runs')
 })
-// btePbYdd3W4XfAHM
